@@ -1,0 +1,22 @@
+#include<stdio.h>
+int main()
+{
+    int i,n;
+
+    printf("Enter the numbers of students : ");
+    scanf("%d", &n);
+
+     int marks[n];
+
+    for(i=0; i<n; i++)
+    {
+        printf("Enter marks of %d students : ", i+1);
+        scanf("%d", &marks[i]);
+    }
+
+    printf("\nThe marks are : \n");
+    for(i=0; i<n; i++)
+    {
+        printf("Students %d : %d\n", i+1, marks[i]);
+    }
+}
